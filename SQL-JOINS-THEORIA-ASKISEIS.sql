@@ -104,7 +104,7 @@ LEFT JOIN EMPLOYEES E
 ON D.DEPARTMENT_ID=E.DEPARTMENT_ID
 GROUP BY D.DEPARTMENT_NAME
 
----22. Show the department name and the average salary of employees in each department.
+--- Show the department name and the average salary of employees in each department.
 SELECT D.DEPARTMENT_NAME, AVG(E.SALARY) AS AVERAGE_SALARY
 FROM DEPARTMENTS D
 JOIN EMPLOYEES E
@@ -131,7 +131,7 @@ GROUP BY D.DEPARTMENT_NAME
 
 
 
----25. List departments where the average employee salary is greater than 75,000 and show the average.
+---List departments where the average employee salary is greater than 75,000 and show the average.
 SELECT D.DEPARTMENT_NAME, AVG(E.SALARY) AS AVERAGE_EMPLOYEE_SALARY
 FROM DEPARTMENTS D
 LEFT JOIN EMPLOYEES E
