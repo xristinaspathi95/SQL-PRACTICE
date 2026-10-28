@@ -1,4 +1,4 @@
- --AGREEGATIONS KAI GROUP BY
+ --AGREEGATIONS AND GROUP BY
  --- Find the total number of employees in each department.
  SELECT COUNT(*) AS TOTAL_NUMBER FROM EMPLOYEES
  GROUP BY DEPARTMENT_ID
