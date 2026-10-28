@@ -19,7 +19,7 @@ ON DEPARTMENTS.DEPARTMENT_ID=EMPLOYEES.DEPARTMENT_ID
 
 
 
----Find the total salary budget for each department.(KAHKA-CLAUDE)
+---Find the total salary budget for each department.
 SELECT D.DEPARTMENT_NAME, SUM(E.SALARY) AS SALARY_BUDGET
 FROM EMPLOYEES E
 LEFT JOIN DEPARTMENTS D
@@ -74,7 +74,7 @@ SELECT * FROM PROJECTS
 WHERE START_DATE > '2022.01.01'
 
 
---- Select departments that do not have any employees( EGW EVAZA NA EXEI NULL ONOMA MONO ALLA HTAN LATHOS,CLAUDE)
+--- Select departments that do not have any employees
 SELECT * FROM DEPARTMENTS D
 LEFT JOIN EMPLOYEES E
  ON D.DEPARTMENT_ID=E.DEPARTMENT_ID
@@ -87,7 +87,7 @@ LEFT JOIN EMPLOYEES E
  ON E.DEPARTMENT_ID=D.DEPARTMENT_ID
  WHERE  SALARY BETWEEN 70000 AND 80000
 
- ---List projects that belong to the same department as employee 'John Doe'(ME VOHTHEIA)
+ ---List projects that belong to the same department as employee 'John Doe'
  SELECT P.* FROM PROJECTS P
  JOIN EMPLOYEES E
  ON E.DEPARTMENT_ID=P.DEPARTMENT_ID
