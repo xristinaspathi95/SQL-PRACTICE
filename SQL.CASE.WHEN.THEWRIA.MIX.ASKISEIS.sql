@@ -1,4 +1,4 @@
----THEWRIA CASE WHEN
+---CASE WHEN
 
 ---case when
 
@@ -14,9 +14,9 @@ from employees
 
 --multiple when
 
--- an to onoma ksekinaei apo a tote 'starts with a'
--- an to onoma ksekinaei apo b tote 'starts with b'
---alliws whatever
+-- IF NAME  'starts with a'
+-- IF NAME 'starts with b'
+--ELSE whatever
 select first_name,
 last_name,
 salary,
@@ -27,7 +27,7 @@ else  'whatever' -- else pianei ola ta upoloipa
 end as name_status
 from employees
 
----ASKISEIS CASE WHEN
+---PRACTICE CASE WHEN
 ---Display a YES or NO if an employee earns more than $80,000.
 SELECT FIRST_NAME, LAST_NAME, SALARY,
 CASE 
@@ -98,7 +98,7 @@ ON E.DEPARTMENT_ID=E.DEPARTMENT_ID
 WHERE D.DEPARTMENT_NAME = 'HR'
 
 ---Get the projects that started before January 1, 2020, and are associated with the 'IT' department.
----( TI EXW KANEI KAI DE FAINETAI LATHOS ALLA DE DEIXNEI KATI)
+
 SELECT P.PROJECT_NAME,P.START_DATE,D.DEPARTMENT_NAME FROM PROJECTS P
  JOIN DEPARTMENTS D
 ON D.DEPARTMENT_ID=P.DEPARTMENT_ID
